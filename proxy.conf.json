@@ -1,0 +1,10 @@
+
+
+{
+    "/api": {
+      "target": "https://muthootcustomer.nimapinfotech.com/",
+      "secure": false
+    }
+  }
+
+  
