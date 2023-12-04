@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MaterialModule } from 'src/app/angular-material/material/material.module';
-import {FormGroup,FormBuilder,FormControlName,ReactiveFormsModule} from '@angular/forms'
+import {UntypedFormGroup,UntypedFormBuilder,FormControlName,ReactiveFormsModule} from '@angular/forms'
 import { UserService } from 'src/shared/user.service';
 import {map} from 'rxjs/operators'
 
@@ -14,7 +14,7 @@ import {map} from 'rxjs/operators'
 export class LogInComponent implements OnInit {
  count=0
   constructor(
-     private fb:FormBuilder,
+     private fb:UntypedFormBuilder,
     private service:UserService) { 
       setInterval( ()=>{
         return this.count ++
@@ -22,7 +22,7 @@ export class LogInComponent implements OnInit {
         
       
     }
-  LogInForm!:FormGroup
+  LogInForm!:UntypedFormGroup
   result:any
  
 

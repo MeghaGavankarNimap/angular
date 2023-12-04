@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,10 +10,10 @@ import { Router } from '@angular/router';
 export class ParentComponent implements OnInit {
   name: any;
   data: any;
-  myForm!:FormGroup 
+  myForm!:UntypedFormGroup 
   show:any
   
-  constructor(private fb:FormBuilder,
+  constructor(private fb:UntypedFormBuilder,
     private router:Router) {
     this.myForm=this.fb.group({
       name:[]
