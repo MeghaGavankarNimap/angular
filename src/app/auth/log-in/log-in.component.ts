@@ -12,8 +12,16 @@ import {map} from 'rxjs/operators'
   styleUrls: ['./log-in.component.scss']
 })
 export class LogInComponent implements OnInit {
-  constructor( private fb:FormBuilder,
-    private service:UserService) { }
+ count=0
+  constructor(
+     private fb:FormBuilder,
+    private service:UserService) { 
+      setInterval( ()=>{
+        return this.count ++
+      },1000)
+        
+      
+    }
   LogInForm!:FormGroup
   result:any
  

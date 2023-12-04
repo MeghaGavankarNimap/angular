@@ -1,0 +1,8 @@
+<!-- <p>parent works!</p> -->
+<form [formGroup]="myForm">
+    <input type="text" formControlName="name">
+    <button (click)="onSubmit()">Submit</button>
+</form>
+
+<app-child [newdata]="data" [shownew]="show"></app-child>
+
